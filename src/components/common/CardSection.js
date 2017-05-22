@@ -21,4 +21,4 @@ const styles = {
   }
 };
 
-export { CardSection: CardSection };
+export { CardSection };
