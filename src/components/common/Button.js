@@ -3,6 +3,7 @@ import { Text, TouchableOpacity } from 'react-native';
 
 const Button = ({ onPress, children }) => {
   const { buttonStyle, textStyle } = styles;
+
   return (
     <TouchableOpacity onPress={onPress} style={buttonStyle}>
       <Text style={textStyle}>
@@ -22,8 +23,8 @@ const styles = {
     paddingBottom: 10
   },
   buttonStyle: {
-    flex: 1, //expand as much as possible
-    alignSelf: 'stretch', //element positions itself
+    flex: 1,
+    alignSelf: 'stretch',
     backgroundColor: '#fff',
     borderRadius: 5,
     borderWidth: 1,
