@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import firebase from 'firebase';
-import { Header, Button, Spinner } from './components/common'; //referencing directory defaults to index.js
+import { Header, Button, Spinner } from './components/common';
 import LoginForm from './components/LoginForm';
-
 
 class App extends Component {
   state = { loggedIn: null };
@@ -19,7 +18,6 @@ class App extends Component {
       });
 
     firebase.auth().onAuthStateChanged((user) => {
-      // called when sign-in/sign-out, determines presence of user
       if (user) {
         this.setState({ loggedIn: true });
       } else {
